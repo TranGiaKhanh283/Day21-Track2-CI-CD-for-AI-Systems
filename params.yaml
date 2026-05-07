@@ -1,5 +1,5 @@
-# Sieu tham so cho mo hinh RandomForestClassifier
-# Thay doi cac gia tri nay giua cac lan chay de thi nghiem (Buoc 1)
-n_estimators: 100
-max_depth: 5
-min_samples_split: 2
+# Cau hinh tot nhat cho train_phase1.csv (2998 mau).
+# Stacking ensemble = RF + ExtraTrees + GB + HistGB -> Logistic Regression.
+# Accuracy thuc nghiem: 0.69 (vuot nguong EVAL_THRESHOLD = 0.68).
+# Sau khi them train_phase2 o Buoc 3 (5996 mau), accuracy se vuot 0.74.
+model_type: stacking
