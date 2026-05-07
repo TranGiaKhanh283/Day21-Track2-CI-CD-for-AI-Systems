@@ -1,5 +1,5 @@
-# Cau hinh tot nhat cho train_phase1.csv (2998 mau).
-# Stacking ensemble = RF + ExtraTrees + GB + HistGB -> Logistic Regression.
-# Accuracy thuc nghiem: 0.69 (vuot nguong EVAL_THRESHOLD = 0.68).
-# Sau khi them train_phase2 o Buoc 3 (5996 mau), accuracy se vuot 0.74.
-model_type: stacking
+model_type: hist_gradient_boosting
+max_iter: 1000
+max_depth: 10
+learning_rate: 0.03
+min_samples_leaf: 10
